@@ -1,4 +1,4 @@
-const clientId = "9e2440b5f75641138885d2e7212e4649";
+const clientId = "YOUR_SPOTIFY_CLIENT_ID"; // Remplacez par votre client ID Spotify
 let accessToken = localStorage.getItem("access_token");
 
 if (isTokenValid()) {
