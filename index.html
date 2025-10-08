@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mon Profil Spotify</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/script.js" type="module"></script>
+</head>
+<body class="font-sans bg-[#121212] text-white min-h-screen"></body>
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8 text-green-500">Mon profil Spotify</h1>
+    <section id="profile" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">Connecté en tant que <span id="displayName" class="text-green-400"></span></h2>
+    </section>
+    <section id="artists" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Artistes suivis</h2>
+      <div id="artistList" class="gap-4"></div>
+    </section>
+    <section id="search" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Rechercher une musique</h2>
+      <div class="flex gap-2 mb-4">
+        <input type="text" id="searchInput" placeholder="Titre ou artiste..." class="flex-1 px-4 py-2 rounded bg-[#232323] text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 max-w-6xl" />
+        <button id="searchBtn" class="px-4 py-2 rounded bg-green-500 hover:bg-green-600 text-white font-semibold">Rechercher</button>
+        <button id="resetSearchBtn" class="px-4 py-2 rounded bg-gray-700 hover:bg-gray-600 text-white font-semibold">Réinitialiser</button>
+      </div>
+      <div id="searchResults" class="mt-6"></div>
+    </section>
+    <section id="playerSection" class="flex flex-col items-center">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Lecteur Spotify</h2>
+      <div id="spotifyPlayer" class="flex justify-center"></div>
+    </section>
+  </div>
+</body>
+</html>
